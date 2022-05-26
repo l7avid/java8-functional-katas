@@ -20,14 +20,7 @@ import java.util.stream.Collectors;
 public class Kata7 {
     public static List<Map> execute() {
         List<MovieList> movieLists = DataUtil.getMovieLists();
-
-//        movieLists.stream().map(movieList -> movieList.getVideos())
-//                .flatMap(movies -> movies.stream())
-//                .map(movie -> movie.getBoxarts())
-//                .flatMap(boxArts -> boxArts.stream())
-//                .reduce((a, b) -> a.getWidth()* a.getHeight() > b.getWidth()* b.getHeight() ? b : a)
-//                .map(boxArt -> boxArt.getUrl());
-
+        
          return movieLists.stream().map(movieList -> movieList.getVideos())
                 .flatMap(movies -> movies.stream())
                 .map(movie -> {
