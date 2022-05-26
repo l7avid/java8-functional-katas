@@ -178,7 +178,7 @@ public class DataUtil {
             ]
         },
         {
-            name: "Instant Queue",
+            name: "Dramas",
             videos: [
                 {
                     "id": 65432445,
